@@ -89,6 +89,7 @@ RUN mkdir /home/steam/steamcmd &&\
 	cd /home/steam/steamcmd &&\ 
 	curl http://media.steampowered.com/installer/steamcmd_linux.tar.gz | tar -vxz 
 
+RUN armmanager upgrade-tools
 
 # First run is on anonymous to download the app
 # We can't download from docker hub anymore -_-
